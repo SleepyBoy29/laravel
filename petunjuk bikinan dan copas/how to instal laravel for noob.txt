@@ -1,0 +1,63 @@
+cara instal laravel di cmd, download dan instal xampp& composer lalu masuk ke cmd dan copas yang ada dibawah ini
+=========================================
+composer global require laravel/installer
+=========================================
+
+untuk membuat folder baru dengan laravel masuk ke cmd dan ketik
+=================================================
+laravel new "folder name" (example first project)
+=================================================
+
+cara lain membuat folder bisa juga dengan composer
+====================================================
+composer create-project --prefer-dist laravel/laravel blog "5.2.*"
+====================================================
+atau download file dri net dan menggunakan commend untuk menjalankannya
+
+setelah selesai menginstal laravel dan membuat folder gunakan commend cd untuk masuk ke folder tsb(ga usah ketik kutip gpp kok)
+================
+cd "folder name"
+================
+
+untuk melihat project jalankan xampp degan melakukan start apache dan Mysql
+ketik di dalam folder dengan cmd 
+=================
+php artisan serve
+=================
+
+
+(jika php artisan serve tidak diketik maka file tidak akan terbuka,
+harus dilakukan setiap kali ingin melihat file)
+
+
+ketik ini do web untuk menampilkan aplikasi
+==============
+localhost:8000
+==============
+
+untuk migrasi atau import database ke aplikasi, harus berada di folder yang akan digunakan dan harus mengedit ENV file
+
+dari:
+=======================
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+=======================
+menjadi:(ganti nama database yang akan digunakan dan username menjadi root, jangan set password jika tidak mau)
+=======================
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=first_test_laravel
+DB_USERNAME=root
+DB_PASSWORD=
+=======================
+
+===================
+php artisan migrate
+===================
+
+setiap kali ingin migrate database yang baru/ sudah diedit karena kurang, harus men-drop semua table yang ada di database, lalu bisa migrate lagi

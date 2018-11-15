@@ -1,0 +1,11 @@
+php artisan inspire
+
+Smile, breathe, and go slowly. - Thich Nhat Hanh
+Simplicity is the essence of happiness. - Cedric Bledsoe
+Simplicity is an acquired taste. - Katharine Gerould
+Simplicity is the ultimate sophistication. - Leonardo da Vinci
+He who is contented is rich. - Laozi
+It always seems impossible until it is done. - Nelson Mandela
+It is quality rather than quantity that matters. - Lucius Annaeus Seneca
+Computer science is no more about computers than astronomy is about telescopes. - Edsger Dijkstra
+When there is no desire, all things are at peace. - Laozi
